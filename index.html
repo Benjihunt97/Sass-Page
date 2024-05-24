@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Alpine JS -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    <title>SaSS Company</title>
+</head>
+<body class="overflow-x-hidden">
+
+    <main>
+        <!-- top tag bar -->
+        <div class="bg-black text-white text-xs py-2 flex items-center justify-center gap-3">
+            <p>New!</p>
+            <p>We launched our affiliate program!</p>
+            <p class="underline">See more</p>
+        </div>
+
+        <!-- header / change the styling for mobile first-->
+        <header class="relative flex items-center py-5 px-16 text-sm">
+            <h1 class="font-bold text-lg">launch</h1>
+
+            <div id="menu" class="absolute top-0 -right-[100%] w-[175px] p-5 z-50 h-screen sm:h-auto sm:p-0 sm:static sm:flex bg-white items-center sm:w-full">
+                <div class="flex flex-col sm:flex-row gap-12 mb-5 mx-auto">
+                    <p>What is Launch?</p>
+                    <p>Pricing</p>
+                    <p>FAQ</p>
+                </div>
+                
+                <button class="rounded-md bg-[#E2F4F9] py-2 px-4">Buy Now</button>
+            </div>
+            <button id="open-menu" class="material-symbols-outlined ml-auto sm:hidden">menu</button>
+        </header>
+
+
+        <!-- hero -->
+        <section class="relative py-16 px-10 sm:px-0 text-center">
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl max-w-[15ch] mx-auto font-bold mb-5">Launch a saas product in style</h1>
+            <p class="mb-6 max-w-[60ch] mx-auto">Create a stylish website easy and for everyone – SaaS Platforms, Technology Startups and more.</p>
+
+            <div class="flex flex-col sm:flex-row gap-4 sm:w-fit mx-auto">
+                <button class="py-3 sm:px-8 rounded-md bg-black text-white">Buy Now</button>
+                <button class="py-3 sm:px-8 rounded-md bg-[#E2F4F9]">Preview in Figma</button>
+            </div>
+
+            <img class="absolute left-20 top-20 hidden lg:block" src="https://github.com/Benjihunt97/Sass-Page/blob/main/Group%201410103620.png?raw=true" alt="">
+        </section>
+
+        <!-- image row with gradient bottom -->
+        <section class="relative flex flex-col sm:flex-row  overflow-x-hidden [&>*]:object-cover
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:w-full
+            after:h-32
+            after:bg-gradient-to-t
+            after:from-[#E2F4F9]
+            after:[rgba(226, 244, 249, 0.5)]
+            ">
+            <img class="w-full" src="https://github.com/Benjihunt97/Sass-Page/blob/main/Blog.png?raw=true" alt="">
+            <img class="w-full" src="https://github.com/Benjihunt97/Sass-Page/blob/main/Home.png?raw=true" alt="">
+            <img class="w-full" src="https://github.com/Benjihunt97/Sass-Page/blob/main/About%204.png?raw=true" alt="">
+            <img class="w-full" src="https://github.com/Benjihunt97/Sass-Page/blob/main/About%205.png?raw=true" alt="">
+        </section>
+
+        <!-- customize section -->
+        <section class="bg-black text-white text-center p-8 sm:p-20">
+            <h1 class="font-bold text-2xl sm:text-4xl mb-10">Customize however you want</h1>
+
+            <div class="flex flex-col sm:flex-row gap-8 max-w-fit mx-auto">
+                <div class="grid place-items-center gap-2 w-[200px] mx-auto">
+                    <img class="size-12 bg-[#B1E9F9] rounded-full" src="https://github.com/Benjihunt97/Sass-Page/blob/main/Group%201410103561.png?raw=true" alt="">
+                    <h3 class="font-bold">Modular design</h3>
+                    <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                </div>
+                <div class="grid place-items-center gap-2 w-[200px]  mx-auto">
+                    <img class="size-12 bg-[#B1E9F9] rounded-full" src="https://github.com/Benjihunt97/Sass-Page/blob/main/Group%201410103562.png?raw=true" alt="">
+                    <h3 class="font-bold">Responsive sections</h3>
+                    <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                </div>
+                <div class="grid place-items-center gap-2 w-[200px]  mx-auto">
+                    <img class="size-12 bg-[#B1E9F9] rounded-full" src="https://github.com/Benjihunt97/Sass-Page/blob/main/Group%201410103563.png?raw=true" alt="">
+                    <h3 class="font-bold">Profesional design</h3>
+                    <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                </div>
+                <div class="grid place-items-center gap-2 w-[200px]  mx-auto">
+                    <img class="size-12 bg-[#B1E9F9] rounded-full" src="https://github.com/Benjihunt97/Sass-Page/blob/main/Group%201410103564.png?raw=true" alt="">
+                    <h3 class="font-bold">Light and dark theme</h3>
+                    <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- image in grid format and text -->
+        <section class="grid gap-12 sm:grid-cols-2 sm:grid-rows-3 place-items-center p-8 sm:max-w-[70%] sm:mx-auto">
+            <div >
+                <h3 class="font-bold text-2xl sm:text-4xl mb-1">Save time and design fast</h3>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.</p>
+            </div>
+            <img src="https://github.com/Benjihunt97/Sass-Page/blob/main/Home.png?raw=true" alt="">
+
+            <div class="sm:col-start-2">
+                <h3 class="font-bold text-2xl sm:text-4xl mb-1">Put the spotlight on your product’s features.</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna
+                    aliqua.</p>
+            </div>
+            <img class="sm:col-span-1 sm:row-start-2" src="https://github.com/Benjihunt97/Sass-Page/blob/main/About%205.png?raw=true" alt="">
+
+            <div class="sm:col-start-1">
+                <h3 class="font-bold text-2xl sm:text-4xl mb-1">Put the spotlight on your product’s features.</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna
+                    aliqua.</p>
+            </div>
+            <img src="https://github.com/Benjihunt97/Sass-Page/blob/main/About%204.png?raw=true" alt="">
+        </section>
+
+        <!-- showcases -->
+        <section class="p-8">
+            <p class="text-sm text-center">Production ready</p>
+            <h3 class="text-2xl sm:text-4xl font-bold text-center mt-4 mb-2">Showcase some impressive features</h3>
+            <p class="text-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua.</p>
+
+            <div id="showcases" class="grid gap-6 sm:grid-cols-2 md:grid-cols-[250px_250px_250px] md:grid-rows-[250px_250px] max-w-[90%] sm:max-w-fit mx-auto mt-10">
+                <div class="bg-[#6DD1ED] rounded-lg shadow-md p-5 grid place-items-center">
+                    <h4 class="font-bold text-2xl sm:text-3xl mb-1">Build for Consistancy</h4>
+                    <p class="font-semibold text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                </div>
+                <div class="bg-[#E8ECED] rounded-lg shadow-md p-5 grid place-items-center">
+                    <img src="https://github.com/Benjihunt97/Sass-Page/blob/main/Group%201410103600.png?raw=true" alt="">
+                </div>
+                <div class="bg-[#E8ECED] rounded-lg shadow-md p-5 grid place-items-center">
+                    <img src="https://github.com/Benjihunt97/Sass-Page/blob/main/Group%201410103605.png?raw=true" alt="">
+                </div>
+                <div class="bg-[#E8ECED] rounded-lg shadow-md p-5 grid place-items-center">
+                    <img src="https://github.com/Benjihunt97/Sass-Page/blob/main/Frame%201410103570.png?raw=true" alt="">
+                </div>
+                <div class="bg-[#E8ECED] rounded-lg shadow-md p-5 grid place-items-center">
+                    <img src="https://github.com/Benjihunt97/Sass-Page/blob/main/Group%201410103607.png?raw=true" alt="">
+                </div>
+                <div class="bg-[#6DD1ED] rounded-lg shadow-md p-5 grid">
+                    <h4 class="font-bold text-2xl sm:text-3xl mb-1">Pre-build Pages</h4>
+                    <p class="font-semibold text-sm">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button class="mt-auto">Try Out</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- dark / light theme toggle -->
+        <section class="bg-black px-12 pt-12 text-white text-center overflow-hidden">
+
+            <p class="text-sm">Turn on the light</p>
+            <h2 class="font-bold text-2xl sm:text-4xl my-2">Choose between dark and light theme</h2>
+            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            <div class="flex rounded-md bg-white overflow-hidden w-fit mx-auto mt-10 relative mb-10">
+                <button class="material-symbols-outlined text-black size-10 text-lg relative z-50">light_mode</button>
+                <button class="material-symbols-outlined text-black size-10 text-lg relative z-50">dark_mode</button>
+                <div id="theme-overlay" class="size-10 bg-[#6DD1ED] rounded-md absolute left-0 top-0"></div>
+            </div>
+
+            <img class="mx-auto" src="https://github.com/Benjihunt97/Sass-Page/blob/main/image%202738.png?raw=true" alt="">
+
+        </section>
+
+        <!-- Testimonials -->
+        <section class="p-8">
+            <p class="text-center text-sm">Testimonials</p>
+            <h2 class="font-bold text-2xl sm:text-4xl text-center my-3">Trusted by over 5,000+ solopreneursand teams</h2>
+            <p class="text-center text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.</p>
+
+                <div class="grid gap-10 sm:grid-cols-2 md:grid-cols-4 lg:max-w-[90%] lg:mx-auto mt-12">
+                    <div class="w-fit">
+                        <div class="flex items-center gap-4 mb-3">
+                            <img class="w-[70px] h-[90px] rounded-md object-cover shadow-md" src="https://github.com/Benjihunt97/Sass-Page/blob/main/Avatar%20Image.png?raw=true" alt="">
+                            <div>
+                                <h3 class="font-bold text-lg">Milla Wilson</h3>
+                                <p class="text-sm">Muula.com</p>
+                            </div>
+                        </div>
+                        <p class="text-sm w-full">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.”</p>
+                    </div>
+
+                    <div class="w-fit">
+                        <div class="flex items-center gap-4 mb-3">
+                            <img class="w-[70px] h-[90px] rounded-md object-cover shadow-md" src="https://github.com/Benjihunt97/Sass-Page/blob/main/Avatar%20Image(1).png?raw=true" alt="">
+                            <div>
+                                <h3 class="font-bold text-lg">John Andrew</h3>
+                                <p class="text-sm">Founder Nemo</p>
+                            </div>
+                        </div>
+                        <p class="text-sm w-full">“Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                        ratione voluptatem sequi nesciunt. Neque porro quisquam est.”</p>
+                    </div>
+
+                    <div class="w-fit">
+                        <div class="flex items-center gap-4 mb-3">
+                            <img class="w-[70px] h-[90px] rounded-md object-cover shadow-md" src="https://github.com/Benjihunt97/Sass-Page/blob/main/Avatar%20Image(4).png?raw=true" alt="">
+                            <div>
+                                <h3 class="font-bold text-lg">Jessica Jay</h3>
+                                <p class="text-sm">@jessij</p>
+                            </div>
+                        </div>
+                        <p class="text-sm w-full">“Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                        consequatur? Quis autem vel eum iure reprehenderit.”</p>
+                    </div>
+
+                    <div class="w-fit">
+                        <div class="flex items-center gap-4 mb-3">
+                            <img class="w-[70px] h-[90px] rounded-md object-cover shadow-md" src="https://github.com/Benjihunt97/Sass-Page/blob/main/Avatar%20Image(2).png?raw=true" alt="">
+                            <div>
+                                <h3 class="font-bold text-lg">Mark Donal</h3>
+                                <p class="text-sm">@Kuto</p>
+                            </div>
+                        </div>
+                        <p class="text-sm w-full">“Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- get started -->
+        <section class="relative w-[95%] max-w-[1000px] px-5 py-8 sm:py-20 bg-black text-white text-center mx-auto rounded-lg lg:my-28">
+            <h1 class="text-2xl sm:text-4xl font-bold mb-3">Ready to get started?</h1>
+            <p class="text-sm mb-6">Explore the Components, or upgrade to Pro to instantly unlock all items.</p>
+
+            <div class="flex flex-col sm:flex-row gap-4 sm:w-fit mx-auto">
+                <button class="py-3 sm:px-8 rounded-md bg-[#6DD1ED] text-black flex items-center justify-center gap-2">Buy Now <span class="material-symbols-outlined text-lg">east</span></button>
+                <button class="py-3 sm:px-8 rounded-md bg-white text-black">Preview in Figma</button>
+            </div>
+
+            <img class="absolute -right-28 -bottom-64 hidden lg:block" src="https://github.com/Benjihunt97/Sass-Page/blob/main/Group%201410103621.png?raw=true" alt="">
+        </section>
+
+        <!-- asked quesitons -->
+        <section class="p-8 sm:p-20 text-center">
+
+            <h1 class="font-bold text-2xl sm:text-4xl mb-3">Frequently asked questions</h1>
+            <p class="text-sm mb-5">Need help with something? Here are our most frequently asked questions.</p>
+
+            <div id="accordian" class="md:max-w-[90%] md:mx-auto space-y-5 divide-y-2 divide-gray-400 text-left">
+                <div x-data="{open: false}" class="pt-2">
+                    <button @click="open = ! open" class="font-semibold text-sm lg:text-lg flex items-center justify-between mb-3 w-full">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?
+                        <span :class="{'text-gray-400 rotate-0': !open, 'text-black rotate-180': open}" class="material-symbols-outlined text-base ml-auto transition-all">north</span>
+                    </button>
+                    <p x-show="open" @click.outside="open = false" x-transition class="text-xs text-[#364153]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+                <div x-data="{open: false}" class="pt-2">
+                    <button @click="open = ! open" class="font-semibold text-sm lg:text-lg flex items-center justify-between mb-3 w-full">
+                        Ut enim ad minima veniam, quis nostrum exercitationem?
+                        <span :class="{'text-gray-400 rotate-0': !open, 'text-black rotate-180': open}" class="material-symbols-outlined text-base ml-auto transition-all">north</span>
+                    </button>
+                    <p x-show="open" @click.outside="open = false" x-transition class="text-xs text-[#364153]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+                <div x-data="{open: false}" class="pt-2">
+                    <button @click="open = ! open" class="font-semibold text-sm lg:text-lg flex items-center justify-between mb-3 w-full">
+                        Quis autem vel eum iure reprehenderit qui?
+                        <span :class="{'text-gray-400 rotate-0': !open, 'text-black rotate-180': open}" class="material-symbols-outlined text-base ml-auto transition-all">north</span>
+                    </button>
+                    <p x-show="open" @click.outside="open = false" x-transition class="text-xs text-[#364153]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+                <div x-data="{open: false}" class="pt-2">
+                    <button @click="open = ! open" class="font-semibold text-sm lg:text-lg flex items-center justify-between mb-3 w-full">
+                        Voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat?
+                        <span :class="{'text-gray-400 rotate-0': !open, 'text-black rotate-180': open}" class="material-symbols-outlined text-base ml-auto transition-all">north</span>
+                    </button>
+                    <p x-show="open" @click.outside="open = false" x-transition class="text-xs text-[#364153]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- footer -->
+        <footer class="bg-black text-white p-8 sm:p-20 text-sm grid md:grid-cols-[250px_auto_auto_auto] gap-8">
+            <h1 class="font-bold text-lg mb-5">launch</h1>
+
+            <div class="md:ml-auto">
+                <h4 class="font-bold mb-2">Product</h4>
+                <ul class="[&>li]:text-xs space-y-4">
+                    <li>What is Launch?</li>
+                    <li>Pricing</li>
+                    <li>FAQ</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="md:ml-auto">
+                <h4 class="font-bold mb-2">Resources</h4>
+                <ul class="[&>li]:text-xs space-y-4">
+                    <li>Updates</li>
+                    <li>Community</li>
+                    <li>Terms and Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+
+            <div class="md:ml-auto">
+                <h3 class="font-bold mb-4">Subscribe to our newsletter</h3>
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-3">
+                    <input class="rounded-md p-2 text-sm w-[250px]" placeholder="Email" type="email">
+                    <button class="rounded-md bg-[#6DD1ED] text-black text-sm sm:px-4 py-2">Send</button>
+                </div>
+            </div>
+
+            <hr class="col-span-full bg-[#777B81] h-.5">
+
+            <p class="text-xs text-[#777B81]">© 2023 Launch</p>
+        </footer>
+        
+    </main>
+    
+</body>
+</html>
